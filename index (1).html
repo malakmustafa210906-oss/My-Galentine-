@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For My Cutie 🌙</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="introMusic" src="fly_me_to_the_moon.mp3"></audio>
+<audio id="yesMusic" src="fly_me_to_the_moon.mp3"></audio>
+
+<div class="hearts"></div>
+
+<div class="container" id="page1">
+  <h2 id="typeText"></h2>
+  <button onclick="goToPage2()">Next 💌</button>
+</div>
+
+<div class="container hidden" id="page2">
+  <h2>Will you be my Valentine babo? 🥹💖</h2>
+  <div class="buttons">
+    <button id="yesBtn" onclick="yesClicked()">Yes 💞</button>
+    <button id="noBtn" onmouseenter="moveNo()">No 😶</button>
+  </div>
+</div>
+
+<div class="container hidden" id="page3">
+  <h2>I knew it 🥹🥹🥹🥹🥹🥹💋💋💋🎀🎀🎀🎀🫀🫀🫁🫁🫁</h2>
+  <img src="cat.gif" class="cat">
+</div>
+
+<audio id="finalMusic">
+  <source src="fly-me-to-the-moon-hum.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>

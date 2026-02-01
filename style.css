@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffe6f0, #fffafc);
+  font-family: 'Comic Sans MS', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  background: white;
+  padding: 25px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  width: 85%;
+  max-width: 420px;
+  z-index: 2;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  background: #ff8fcf;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.buttons {
+  position: relative;
+  height: 120px;
+}
+
+#noBtn {
+  position: absolute;
+}
+
+.cat {
+  width: 200px;
+  margin-top: 15px;
+}
+
+.hearts span {
+  position: absolute;
+  bottom: -20px;
+  animation: float 6s linear infinite;
+  font-size: 18px;
+}
+
+@keyframes float {
+  from { transform: translateY(0); opacity: 1; }
+  to { transform: translateY(-100vh); opacity: 0; }
+}
